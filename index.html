@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Form Pendaftaran Ekskul SMK Letris Pamulang</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h2>Form Pendaftaran Ekskul SMK Letris Pamulang</h2>
+    <div class="form-container">
+      <input type="hidden" id="editIndex" value="" />
+
+      <div class="form-group">
+        <label>Nama Lengkap:</label>
+        <input type="text" id="nama" placeholder="Masukkan nama siswa" />
+      </div>
+
+      <div class="form-group">
+        <label>Kelas:</label>
+        <div class="radio-group">
+          <input type="radio" id="kelasX" name="kelas" value="X" />
+          <label for="kelasX" style="display: inline; font-weight: normal"
+            >X</label
+          >
+          <input type="radio" id="kelasXI" name="kelas" value="XI" />
+          <label for="kelasXI" style="display: inline; font-weight: normal"
+            >XI</label
+          >
+          <input type="radio" id="kelasXII" name="kelas" value="XII" />
+          <label for="kelasXII" style="display: inline; font-weight: normal"
+            >XII</label
+          >
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Jurusan:</label>
+        <select id="jurusan">
+          <option value="">-- Pilih Jurusan --</option>
+          <option value="PPLG">PPLG</option>
+          <option value="DKV">DKV</option>
+          <option value="TJKT">TJKT</option>
+          <option value="AKL">AKL</option>
+          <option value="BDP">BDP</option>
+          <option value="MPLB">MPLB</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>Pilihan Ekskul:</label>
+        <select id="ekskul">
+          <option value="">-- Pilih Ekstrakurikuler --</option>
+          <option value="Animasi">Animasi</option>
+          <option value="Paskibra">Paskibra</option>
+          <option value="Volly">Volly</option>
+          <option value="Basket">Basket</option>
+          <option value="Futsal">Futsal</option>
+          <option value="Letsin">Letsin</option>
+          <option value="PMR">PMR</option>
+          <option value="Dance Modern">Dance Modern</option>
+        </select>
+      </div>
+
+      <button id="tambahBtn">Tambah Data</button>
+    </div>
+
+    <h2>Data Pendaftaran Siswa</h2>
+    <table id="tabelPelajar">
+      <thead>
+        <tr>
+          <th>No</th>
+          <th>Nama</th>
+          <th>Kelas</th>
+          <th>Jurusan</th>
+          <th>Ekskul</th>
+          <th>Aksi</th>
+        </tr>
+      </thead>
+      <tbody id="daftarPelajar"></tbody>
+    </table>
+
+    <script src="script.js"></script>
+  </body>
+</html>
